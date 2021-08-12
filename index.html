@@ -8,52 +8,220 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <title>*SHERON-DEV-SANOL</title>
+    <title>Sheron Dave Sañol | Front-End Web Developer & UI/UX Designer</title>
 </head>
 <body>
-    <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-dark m-3 mb-5 p-0">
-        <div class="container-fluid mx-md-5">
-          <a class="navbar-brand" href="#">logo.</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">about me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1">contact</a>
-              </li>
-            </ul>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark mx-3 mt-3 mb-4 mb-md-0 p-0">
+    <div class="container-fluid mx-md-5 p-0">
+      <a class="navbar-brand" href="#">SDSS</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">about me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO BANNER/JUMBOTRON/HEADER -->
+  <header>
+    <div class="mx-3 p-0">
+      <div class="row hero-banner mx-0 mx-md-5">
+        <!-- BANNER TEXT -->
+        <h1 class="fw-600 col-lg-6 fs-sm-1 text-center">SHERON DAVE SAÑOL</h1>
+        <img class="col-12 col-sm-8 col-md-6 mb-4 p-0 mx-auto mx-md-0" src="assets/images/my-img.png" alt="my-img">
+        <div class="col-12 col-md-6 p-0">
+          <p class="col-12 fs-4 fw-300 text-center text-md-start banner-subtext">Let's do a project together!</p>
+          <div class="row d-flex justify-content-center justify-content-md-start m-0 gap-2">
+              <a href="#contact" class="text-center cta-1 col-6 px-0 py-1 d-block col-md-4 col-lg-3 fw-400">contact</a>
+              <a href="#projects" class="text-center cta-2 col-6 px-0 py-1 d-block col-md-4 col-lg-3 fw-300">view projects</a>
           </div>
         </div>
-      </nav>
-    <div class="container px-3">
-
-        <div class="section"></div>
-        <!-- HERO BANNER/JUMBOTRON -->
-        <div class="row">
-
-            <!-- BANNER TEXT -->
-            <div class="col-12 col-lg-6 text-center">
-                <h1 class="order-1 fw-600">*SHERON-DEV-SANOL</h1>
-                <img class="col-12 col-lg-6 mb-4 order-2" src="assets/images/my-img.png" alt="my-img">
-                <p class="col-12 fs-4 order-3 fw-300">Let's do a project together!</p>
-                <div class="row d-flex justify-content-center order-4">
-                    <button class="cta-1 col-6 col-lg-4 px-0 py-1 m-2 fw-400">contact</button>
-                    <button class="cta-2 col-6 px-0 py-1 m-2 fw-300">view projects</button>
-                </div>
-            </div>
-        </div>
+      </div>
     </div>
+  </header>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="row d-flex mx-3 mx-md-5 p-0">
+      <div class="col-12 col-md-4 p-0">
+        <h2 class="mb-4 mb-md-0">about.</h2>
+      </div>
+      <!-- ABOUT TEXT -->
+      <div class="col-md-8 p-0">
+        <div class="row m-0 p-0">
+          <div class="col-12 col-md-5 p-0 mb-2 mb-md-0 fw-300">
+            <p class="text-justify">"Design is not just what it looks and feels like. Design is how it works."</p>
+            <p class="text-justify">Hi! My name is Sheron Dave Sañol. Welcome to my portfolio website.</p>
+            <p class="text-justify">I am a minimalist <strong>Front-End Web Developer</strong> & <strong>UI/UX Designer</strong>. I design and code simple and functional web applications.</p>
+          </div>
+          <div class="col-md-1"></div>
+          <!-- ABOUT SKILLS -->
+          <div class="col-12 col-md-6 p-0 fw-300 fs-md-3">
+            <p><strong>Tech Stack:</strong></p>
+            <p class="m-0">MongoDB</p>
+            <p class="m-0">Express.js</p>
+            <p class="m-0">React.js</p>
+            <p class="m-0">Node.js</p>
+            <p class="mt-4"><strong>Design Tools:</strong></p>
+            <p class="m-0">Figma</p>
+            <p class="m-0">Adobe XD</p>
+            <p class="m-0">Adobe Photoshop</p>
+            <p class="m-0">Adobe Illustrator</p>
+          </div>
+        </div>
+      </div>  
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="row d-flex mx-3 mx-md-5 p-0">
+      <div class="col-12 col-md-4 p-0">
+        <h2 class="mb-4 mb-md-0">projects.</h2>
+      </div>
+
+      <!-- PROJECT ITEMS -->
+
+      <!-- ITEM 1 -->
+      <!-- PROJECT PREVIEW -->
+      <div class="col-md-8 p-0">
+        <div class="row flex-md-row-reverse m-0 p-0">
+          <div class="col-12 col-md-6 p-0 mb-4 mb-md-0">
+            <img class="col-12" src="assets/images/project-img-1.jpg" alt="">
+          </div>
+          <div class="col-md-1"></div>
+          <!-- PROJECT TEXT -->
+          <div class="col-12 col-md-5 fw-300 fs-md-3 p-0">
+            <p class="m-0 fw-500">PROJECT NAME</p>
+            <p>08-12-2021</p>
+            <p class="fw-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cum dolores quidem voluptatum, distinctio pariatur.
+            </p>
+            <a href="#projects" class="project-view">view project</a>
+          </div>
+        </div>
+        <hr class="col-12 col-md-12 p-0 my-4">
+
+        <!-- ITEM 2 -->
+        <!-- PROJECT PREVIEW -->
+        <div class="row flex-md-row-reverse m-0 p-0">
+          <div class="col-12 col-md-6 p-0 mb-4 mb-md-0">
+            <img class="col-12" src="assets/images/project-img-2.jpg" alt="">
+          </div>
+          <div class="col-md-1"></div>
+          <!-- PROJECT TEXT -->
+          <div class="col-12 col-md-5 p-0 fw-300 fs-md-3">
+            <p class="m-0 fw-500">PROJECT NAME</p>
+            <p>08-12-2021</p>
+            <p class="fw-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cum dolores quidem voluptatum, distinctio pariatur.
+            </p>
+            <a href="#projects" class="project-view">view project</a>
+          </div>
+        </div>
+        <hr class="col-12 col-md-12 p-0 my-4">
+
+        <!-- ITEM 3 -->
+        <!-- PROJECT PREVIEW -->
+        <div class="row flex-md-row-reverse m-0 p-0">
+          <div class="col-12 col-md-6 p-0 mb-4 mb-md-0">
+            <img class="col-12" src="assets/images/project-img-1.jpg" alt="">
+          </div>
+          <div class="col-md-1"></div>
+          <!-- PROJECT TEXT -->
+          <div class="col-12 col-md-5 p-0 fw-300 fs-md-3">
+            <p class="m-0 fw-500">PROJECT NAME</p>
+            <p>08-12-2021</p>
+            <p class="fw-400 text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit cum dolores quidem voluptatum, distinctio pariatur.
+            </p>
+            <a href="#projects" class="project-view">view project</a>
+          </div>
+        </div>
+        <hr class="col-12 col-md-12 p-0 my-4">
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="row d-flex mx-3 mx-md-5 p-0">
+      <div class="col-12 col-md-4 p-0">
+        <h2 class="mb-4 mb-md-0">contact.</h2>
+      </div>
+
+      <div class="col-12 col-md-8 p-0">
+        <h3 class="p-0 fw-500 contact-header">got a project you wanna work on? send me a message!</h3>
+        <form action="">
+          <!-- NAME -->
+          <label class="col-12 fw-300 mt-3" for="name">name</label>
+          <input class="col-12 fw-300 p-2" type="text" name="name" required>
+          <!-- EMAIL -->
+          <label class="col-12 fw-300 mt-3" for="email">email</label>
+          <input class="col-12 fw-300 p-2" type="email" name="email" required>
+          <!-- CONTACT NUMBER -->
+          <label class="col-12 fw-300 mt-3" for="number">contact number</label>
+          <input class="col-12 fw-300 p-2" type="number" name="number" required>
+          <!-- EMAIL -->
+          <label class="col-12 fw-300 mt-3" for="message" name="message">message</label>
+          <textarea name="message" class="col-12 fw-300 p-2"></textarea>
+          <button type="submit" class="cta-1 col-4 col-md-2 px-0 py-1 d-block mt-3 fw-400">send</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <hr class="footer-hr mx-3 mx-md-5 mb-5">
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="mx-3 mx-md-5 p-0">
+    <div class="row m-0 p-0 mb-3">
+      <div class="col-12 col-md-2 p-0 mb-5 mb-md-0 description">
+        <p class="m-0 p-0 fw-500">PORTFOLIO WEBSITE</p>
+        <p class="m-0 p-0 fw-500">FRONT-END DEVELOPER</p>
+        <p class="m-0 p-0 fw-500">UI/UX DESIGNER</p>
+      </div>
+      <div class="col-12 col-md-2 p-0"></div>
+      <div class="col-12 col-md-4 p-0 mb-5 mb-md-0">
+        <a class="d-block fs-5 fw-300 be" target="blank" href="https://www.behance.net/sherondavesanol">Behance</a>
+        <a class="d-block fs-5 fw-300 ig" target="blank" href="https://www.instagram.com/davesanol/">Instagram</a>
+        <a class="d-block fs-5 fw-300 yt" target="blank" href="https://www.youtube.com/channel/UCqzlyGWBku7C9Pxklp5P5nQ">Youtube</a>
+      </div>
+      <div class="col-12 col-md-4 p-0 contact-info">
+      <p class="m-0 p-0 fw-300 mb-2">Sheron Dave Sanico Sañol</p>
+      <p class="m-0 p-0 fw-300">Lapaz, Iloilo City</p>
+      <p class="m-0 p-0 fw-300 mb-2">5000 Iloilo PH</p>
+      <p class="m-0 p-0 fw-300 mb-2">0917 770 1559</p>
+      <p class="m-0 p-0 fw-500">sdssanol@gmail.com</p>
+      </div>
+    </div>
+    <div class="d-md-flex gap-1 my-4 copyright">
+      <p class="m-0 p-0 fw-300">Made by Sheron Dave Sañol</p>
+      <p class="m-0 p-0 fw-300">&copy;2021 All Rights Reserved</p>
+    </div>
+
+  </div>
+  </footer>
+
+  <!-- <div class="social-media">
+      <a href="#" class="fw-300 p-0">ig.</a>
+      <a href="#" class="fw-300 p-0">yt.</a>
+      <a href="#" class="fw-300 p-0">be.</a>
+  </div> -->
 
 
 
