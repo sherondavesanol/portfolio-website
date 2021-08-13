@@ -21,7 +21,7 @@ header {
 }
 
 section {
-    padding: 4rem 0;
+    padding: 6rem 0;
 }
 
 .text-justify {
@@ -274,6 +274,10 @@ textarea:focus, input:focus {
 
     body {
         margin: 0 10rem;
+    }
+    
+    section {
+        padding: 7.5rem 0;
     }
 
     h2 {
