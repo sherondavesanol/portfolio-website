@@ -20,6 +20,11 @@ header {
     min-height: 100vh;
 }
 
+img {
+    max-height: 100%;
+    width: auto;
+}
+
 section {
     padding: 6rem 0;
 }
@@ -118,14 +123,14 @@ textarea:focus, input:focus {
     }
   }
 
-@keyframes fade {
+/* @keyframes fade {
     from {
         opacity: 0;
     }
     to {
         opacity: 1;
     }
-}
+} */
 
 /* FONT-WEIGHT */
 .fw-300 {
