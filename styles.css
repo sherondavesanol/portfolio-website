@@ -8,11 +8,9 @@ body {
     color: #fff;
     min-height: 90vh;
     position: relative;
-    animation: slide 2.5s;
 }
 
 nav {
-    animation: slide 3.5s;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
@@ -109,28 +107,6 @@ textarea:focus, input:focus {
 .contact-info {
     font-size: 0.85rem;
 }
-
-/* KEYFRAMES */
-
-@keyframes slide {
-    from {
-        top: -100px;
-        opacity: 0;
-    }
-    to {
-        top: 0px;
-        opacity: 1;
-    }
-  }
-
-/* @keyframes fade {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-} */
 
 /* FONT-WEIGHT */
 .fw-300 {
