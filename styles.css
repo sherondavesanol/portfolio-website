@@ -153,8 +153,12 @@ textarea:focus, input:focus {
         display: none;
     }
 
+    p {
+        font-size: 0.75rem;
+    }
+
     a {
-        font-size: 0.75rem !important;
+        font-size: 0.65rem !important;
     }
 
     header {
