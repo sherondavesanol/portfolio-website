@@ -175,9 +175,9 @@
       <div class="col-12 col-md-8 p-0">
         <h3 class="p-0 fw-500 contact-header">got a project you wanna work on? send me a message!</h3>
         <form 
-        action="mailto: sdssanol@gmail.com"
-        method="POST"
-        name="email-form"
+        id="my-form"
+         action="https://formspree.io/f/mdoybarl" 
+         method="POST"
         >
           <!-- NAME -->
           <label class="col-12 fw-300 mt-3" for="name">name</label>
@@ -191,7 +191,8 @@
           <!-- EMAIL -->
           <label class="col-12 fw-300 mt-3" for="message" name="message">message</label>
           <textarea name="message" class="col-12 fw-300 p-2"></textarea>
-          <button type="submit" class="cta-1 col-4 col-md-2 px-0 py-1 d-block mt-3 fw-400">send</button>
+          <button type="submit" class="cta-1 col-4 col-md-2 px-0 py-1 d-block mt-3 fw-400"id="my-form-button">send</button>
+          <p id="my-form-status" class="mt-4"></p>
         </form>
       </div>
     </div>
@@ -239,6 +240,30 @@
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+  <script>
+    var form = document.getElementById("my-form");
+    
+    async function handleSubmit(event) {
+      event.preventDefault();
+      var status = document.getElementById("my-form-status");
+      var data = new FormData(event.target);
+      fetch(event.target.action, {
+        method: form.method,
+        body: data,
+        headers: {
+            'Accept': 'application/json'
+        }
+      }).then(response => {
+        status.innerHTML = "Thanks for reaching out! I'll get back to you soon.";
+        form.reset()
+        
+        setTimeout(() => {status.innerHTML = ''}, 3000)
+      }).catch(error => {
+        status.innerHTML = "Oops! There was a problem submitting your form."
+      });
+    }
+    form.addEventListener("submit", handleSubmit)
+  </script>
 </body>
 </html>
