@@ -1,0 +1,22 @@
+.cta__1 {
+    color: black;
+    background-color: #fff;
+    border-radius: 1rem;
+    border-style: none;
+
+    &:hover {
+        color: black;
+        cursor: pointer;
+    }
+}
+
+.cta__2 {
+    color: #fff;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: solid 1px #fff;
+}
+
+.cta__2:hover {
+    cursor: pointer;
+}

@@ -1,0 +1,51 @@
+.u-text-center {
+    text-align: center;
+}
+
+.u-text-justify {
+    text-align: justify;
+}
+
+.u-align-center {
+    align-items: center;
+}
+
+.u-d-block {
+    display: block;
+}
+
+.u-d-flex {
+    display: flex;
+}
+
+.u-flex-col {
+    flex-direction: column;
+}
+
+.u-jcsb {
+    justify-content: space-between;
+}
+
+.u-jcc {
+    justify-content: center;
+}
+
+
+@media only screen and (min-width: 768px) {
+    
+    .u-text-md-start {
+        text-align: start;
+    }
+
+    .u-md-jcs {
+        justify-content: start;
+    }
+
+    .u-md-d-flex {
+        display: flex;
+    }
+
+    .u-md-flex-row-reverse {
+        flex-direction: row-reverse;
+    }
+}

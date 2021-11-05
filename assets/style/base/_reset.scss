@@ -1,0 +1,15 @@
+html,
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    min-height: 90vh;
+    position: relative;
+}

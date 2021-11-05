@@ -1,0 +1,15 @@
+input, textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+textarea:focus, input:focus {
+    outline-width: 0;
+}

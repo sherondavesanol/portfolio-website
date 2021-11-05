@@ -1,0 +1,43 @@
+.footer {
+
+    &__social-links {
+
+        &--behance,
+        &--behance:hover {
+            color: #6F8EFF;
+        }
+
+        &--linkedin,
+        &--linkedin:hover {
+            color: #FFBB55;
+        }
+
+        &--youtube,
+        &--youtube:hover {
+            color: #FF4040;
+        }
+    }
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-hr {
+    opacity: 75%;
+}
+
+@media only screen and (min-width: 768px) {
+
+    .footer {
+        
+        &__description {
+
+            &__text {
+
+                font-size: 1rem;
+            }
+        }
+    }
+}

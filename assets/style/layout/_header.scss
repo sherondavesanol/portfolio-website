@@ -1,0 +1,117 @@
+.header {
+    min-height: 100vh;
+}
+
+@media only screen and (min-width: 415px) {
+    .header {
+
+        &__banner--text {
+            font-size: 2.5rem; 
+        }
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .header {
+        min-height: 20vh;
+
+        &__banner {
+            flex-direction: row-reverse;
+            align-items: center;
+
+            &--text {
+                display: none;
+            }
+
+            &--subtext {
+                
+                &__text {
+                    font-size: 1rem;
+
+                    &::before {
+                        content: 'ReactJS & UI/UX Developer';
+                        display: block;
+                        margin-bottom: 1rem;
+                        font-weight: 600;
+                        font-size: 3rem;
+                        line-height: 3.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .header {
+
+        &__banner {
+            padding-top: 0;
+
+            &--subtext {
+                
+                &__text {
+                    font-size: 1.75rem;
+
+                    &::before {
+                        font-size: 4rem;
+                        line-height: 4rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1152px) {
+
+    .header {
+
+        &__banner {
+
+            &--subtext {
+                
+                &__text {
+
+                    &::before {
+                        font-size: 5rem;
+                        line-height: 5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1366px) {
+
+    .header {
+
+        &__banner {
+            padding-top: 0;
+        }
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+
+    .header {
+
+        &__banner {
+
+            &--subtext {
+                
+                &__text {
+                    font-size: 2.5rem;
+
+                    &::before {
+                        font-size: 8.5rem;
+                        line-height: 8.5rem;
+                    }
+                }
+            }
+        }
+    }
+}

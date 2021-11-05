@@ -9,51 +9,44 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="icon" sizes="16x16" href="assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="icon" sizes="32x32" href="assets/images/favicon-32x32.png">
-    <title>Sheron Dave Sañol | Front-End Web Developer & UI/UX Designer</title>
+    <title>Sheron Dave Sañol | Full-Stack Web Developer & UI/UX Designer</title>
 </head>
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark pt-2">
-    <div class="container-fluid mx-3 mx-md-5 p-0">
-      <a class="navbar-brand" href="#">SDSS</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="#">home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about">about me</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#projects">projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">contact</a>
-          </li>
-        </ul>
+  <nav>
+    <div class="navbar container-fluid u-d-flex u-jcsb u-px-1 u-md-px-5">
+      <a class="navbar__logo" href="#">SDSS</a>
+      <i id="mobile-menu-logo" onclick="toggleMobileMenu()" class="navbar__mobile-menu--logo fas fa-bars"></i>
+      <div class="navbar__links u-align-end">
+        <a class="navbar__links__link u-mr-1" href="#">home</a>
+        <a class="navbar__links__link u-mr-1" href="#about">about</a>
+        <a class="navbar__links__link u-mr-1" href="#projects">projects</a>
+        <a class="navbar__links__link" href="#contact">contact</a>
       </div>
+    </div>
+    <div id="mobile-menu" class="mobile__menu u-d-flex u-flex-col u-px-1 grid-col-12 u-text-center">
+      <a class="u-py-2 mobile__menu--link mobile__menu--link--home" onclick="toggleMobileMenu()" href="#">home</a>
+      <a class="u-py-2 mobile__menu--link" onclick="toggleMobileMenu()" href="#about">about me</a>
+      <a class="u-py-2 mobile__menu--link" onclick="toggleMobileMenu()" href="#projects">projects</a>
+      <a class="u-py-2 mobile__menu--link" onclick="toggleMobileMenu()" href="#contact">contact</a>
     </div>
   </nav>
 
   <!-- HERO BANNER/JUMBOTRON/HEADER -->
-  <header class="mt-5">
-    <div class="mx-3 pt-3 p-0">
-      <div class="row hero-banner mx-0 mx-md-5">
+  <header class="u-pt-5 u-md-mx-2 u-md-pt-2">
+    <div class="header">
+      <div class="header__banner u-md-d-flex u-mx-0 u-md-mx-3">
         <!-- BANNER TEXT -->
-        <h1 class="fw-600 col-lg-6 fs-sm-1 text-center">SHERON DAVE SAÑOL</h1>
-        <img class="col-12 col-sm-8 col-md-6 mb-4 p-0 mx-auto mx-md-0" src="assets/images/my-img.png" alt="my-img">
-        <div class="col-12 col-md-6 p-0">
-          <p class="col-12 fs-4 fw-300 text-center text-md-start banner-subtext mb-4">Let's do a project together!</p>
-          <div class="row d-flex justify-content-center justify-content-md-start m-0 gap-2">
-              <a href="#contact" class="text-center cta-1 col-6 px-0 py-1 d-block col-md-4 col-lg-3 fw-400">contact</a>
-              <a href="#projects" class="text-center cta-2 col-6 px-0 py-1 d-block col-md-4 col-lg-3 fw-300">view projects</a>
+        <h1 class="header__banner--text u-fw-600 grid-col-lg-6 u-text-center u-fs-3">ReactJS & UI/UX Developer</h1>
+        <img class="grid-col-12 grid-col-sm-8 grid-col-md-6 u-mb-3 u-p-0 u-mx-auto u-mx-md-0" src="assets/images/my-img.png" alt="my-img">
+        <div class="header__banner--subtext grid-col-12 grid-col-md-6 u-p-0">
+          <p class="header__banner--subtext__text grid-col-12 u-fs-4 u-fw-300 u-text-center u-text-md-start u-mb-2">Let's do a project together!</p>
+          <div class="cta u-md-d-flex u-text-center u-md-jcs u-m-0">
+              <a href="#contact" class="cta__1 u-my-half u-mx-auto u-md-mx-0 u-md-mr-half u-md-my-0 u-text-center grid-col-6 u-px-0 u-py-half u-d-block grid-col-md-4 grid-col-lg-3 u-fw-400">contact</a>
+              <a href="#projects" class="cta__2 u-text-center u-mx-auto u-md-mx-0 grid-col-6 u-px-0 u-py-half u-d-block grid-col-md-4 grid-col-lg-3 u-fw-300">view projects</a>
           </div>
         </div>
       </div>
@@ -62,35 +55,34 @@
 
   <!-- ABOUT -->
   <section id="about">
-    <div class="row d-flex mx-3 mx-md-5 p-0">
-      <div class="col-12 col-md-4 p-0">
-        <h2 class="mb-4 mb-md-0">about.</h2>
+    <div class="u-md-d-flex u-md-mx-5 u-mx-1 u-mt-5">
+      <div class="grid-col-12 grid-col-md-4 u-p-0">
+        <h2 class="u-mb-2 u-mb-md-0">about.</h2>
       </div>
       <!-- ABOUT TEXT -->
-      <div class="col-md-8 p-0">
-        <div class="row m-0 p-0">
-          <div class="col-12 col-md-5 p-0 mb-2 mb-md-0 fw-300">
-            <p class="text-justify">"Design is not just what it looks and feels like. Design is how it works."</p>
-            <p class="text-justify">Hi! My name is Sheron Dave Sañol. Welcome to my portfolio website.</p>
-            <p class="text-justify">I am a minimalist <strong>Front-End Web Developer</strong> & <strong>UI/UX Designer</strong>. I design and code simple and functional web applications.</p>
+      <div class="grid-col-md-8 u-p-0">
+        <div class="u-md-d-flex u-m-0 u-p-0">
+          <div class="grid-col-12 grid-col-md-5 u-p-0 u-mb-md-0 u-fw-300">
+            <p class="u-text-justify u-mb-1">"Design is not just what it looks and feels like. Design is how it works."</p>
+            <p class="u-text-justify u-mb-1">Hi! My name is Sheron Dave Sañol. Welcome to my portfolio website.</p>
+            <p class="u-text-justify u-mb-1">I am a minimalist <strong>Full-Stack Web Developer</strong> & <strong>UI/UX Designer</strong>. I mainly write code in ReactJS. I prefer my apps straightforward and functional for a better user experience.</p>
           </div>
-          <div class="col-md-1"></div>
+          <div class="grid-col-md-1"></div>
           <!-- ABOUT SKILLS -->
-          <div class="col-12 col-md-6 p-0 fw-300 fs-md-3">
+          <div class="grid-col-12 grid-col-md-6 u-p-0 u-fw-300">
             <p><strong>Tech Stack:</strong></p>
-            <p class="m-0">MongoDB</p>
-            <p class="m-0">Express.js</p>
-            <p class="m-0">React.js</p>
-            <p class="m-0">Node.js</p>
-            <p class="mt-4"><strong>Design Tools:</strong></p>
-            <p class="m-0">Figma</p>
-            <p class="m-0">Adobe XD</p>
-            <p class="m-0">Adobe Photoshop</p>
-            <p class="m-0">Adobe Illustrator</p>
-            <p class="mt-4"><strong>Myers-Briggs:</strong></p>
-            <p class="m-0">INFJ</p>
-            <p class="mt-4"><strong>Zodiac Sign:</strong></p>
-            <p class="m-0">Leo</p>
+            <p class="u-mt-half u-md-mt-1">MongoDB</p>
+            <p class="u-m-0">Express.js</p>
+            <p class="u-m-0">React.js</p>
+            <p class="u-m-0">Node.js</p>
+            <p class="u-mt-1"><strong>Design Tools:</strong></p>
+            <p class="u-mt-half u-md-mt-1">Figma</p>
+            <p class="u-m-0">Adobe Photoshop</p>
+            <p class="u-m-0">Adobe Illustrator</p>
+            <p class="u-mt-1"><strong>Myers-Briggs:</strong></p>
+            <p class="u-mt-half u-md-mt-1">INFJ</p>
+            <p class="u-mt-1"><strong>Zodiac Sign:</strong></p>
+            <p class="u-mt-half u-md-mt-1">Leo</p>
           </div>
         </div>
       </div>  
@@ -99,189 +91,138 @@
 
   <!-- PROJECTS -->
   <section id="projects">
-    <div class="row d-flex mx-3 mx-md-5 p-0">
-      <div class="col-12 col-md-4 p-0">
-        <h2 class="mb-4 mb-md-0">projects.</h2>
+    <div class="u-md-d-flex u-mx-1 u-md-mx-5 u-mt-5 u-p-0">
+      <div class="grid-col-12 grid-col-md-4 u-p-0">
+        <h2 class="u-mb-2 u-mb-md-0">projects.</h2>
       </div>
 
       <!-- PROJECT ITEMS -->
 
       <!-- ITEM 1 -->
       <!-- PROJECT PREVIEW -->
-      <div class="col-md-8 p-0">
-        <div class="row flex-md-row-reverse m-0 p-0">
-          <div class="col-12 col-md-6 p-0 mb-4 mb-md-0">
-            <img class="col-12" src="assets/images/project-img-1.jpg" alt="">
+      <div class="grid-col-md-8 u-p-0">
+        <div class="u-md-d-flex u-md-flex-row-reverse u-m-0 u-p-0">
+          <div class="grid-col-12 grid-col-md-6 u-p-0 u-mb-1 u-md-mb-0">
+            <img class="grid-col-12" src="assets/images/project-img-1.jpg" alt="">
           </div>
-          <div class="col-md-1"></div>
+          <div class="grid-col-md-1"></div>
           <!-- PROJECT TEXT -->
-          <div class="col-12 col-md-5 p-0 fw-300 fs-md-3">
-            <p class="m-0 fw-500">BLUPRINT ONLINE LEARNING PLATFORM</p>
+          <div class="grid-col-12 grid-col-md-5 u-p-0 u-fw-300">
+            <p class="u-m-0 u-fw-500">BLUPRINT ONLINE LEARNING PLATFORM</p>
             <p>08-24-2021</p>
-            <p class="fw-400 text-justify">A prototype of an online learning platform. Made with MongoDB, Express.js, Node.js, and Rest API for the back-end. HTML, Sass, and vanilla Javascript for the front-end. Designed using Figma.
+            <p class="u-fw-400 u-my-1 u-md-mt-2 u-text-justify">A prototype of an online learning platform. Made with MongoDB, Express.js, Node.js, and Rest API for the back-end. HTML, Sass, and vanilla Javascript for the front-end. Designed using Figma.
             </p>
-            <a href="https://sherondavesanol.github.io/bluprint-client/index.html" target="blank" class="project-view">view project</a>
+            <a href="https://bluprint.vercel.app" target="blank" class="project__view">view project</a>
           </div>
         </div>
-        <hr class="col-12 col-md-12 p-0 my-4">
+        <hr class="grid-col-12 grid-col-md-12 u-p-0 u-my-3">
 
         <!-- ITEM 2 -->
         <!-- PROJECT PREVIEW -->
-        <div class="row flex-md-row-reverse m-0 p-0">
-          <div class="col-12 col-md-6 p-0 mb-4 mb-md-0">
-            <img class="col-12" src="assets/images/project-img-2.jpg" alt="">
+        <div class="u-md-d-flex u-md-flex-row-reverse u-m-0 u-p-0">
+          <div class="grid-col-12 grid-col-md-6 u-p-0 u-mb-1 u-md-mb-0">
+            <img class="grid-col-12" src="assets/images/project-img-2.jpg" alt="">
           </div>
-          <div class="col-md-1"></div>
+          <div class="grid-col-md-1"></div>
           <!-- PROJECT TEXT -->
-          <div class="col-12 col-md-5 p-0 fw-300 fs-md-3">
-            <p class="m-0 fw-500">RICK AND MORTY CHARACTER LIST</p>
+          <div class="grid-col-12 grid-col-md-5 u-p-0 u-fw-300">
+            <p class="u-m-0 u-fw-500">RICK AND MORTY CHARACTER LIST</p>
             <p>08-24-2021</p>
-            <p class="fw-400 text-justify">Rick and Morty character list website made using React.js & Next.js. Data fetched from a Rick and Morty API.
+            <p class="u-fw-400 u-my-1 u-md-mt-2 u-text-justify">Rick and Morty character list website made using React.js & Next.js. Data fetched from a Rick and Morty API.
             </p>
-            <a href="https://rick-and-morty-charlist.vercel.app/" target="blank" class="project-view">view project</a>
+            <a href="https://rick-and-morty-charlist.vercel.app/" target="blank" class="project__view">view project</a>
           </div>
         </div>
-        <hr class="col-12 col-md-12 p-0 my-4">
+        <hr class="grid-col-12 grid-col-md-12 u-p-0 u-my-3">
 
         <!-- ITEM 3 -->
         <!-- PROJECT PREVIEW -->
-        <div class="row flex-md-row-reverse m-0 p-0">
-          <div class="col-12 col-md-6 p-0 mb-4 mb-md-0">
-            <img class="col-12" src="assets/images/project-img-3.jpg" alt="">
+        <div class="u-md-d-flex u-md-flex-row-reverse u-m-0 u-p-0">
+          <div class="grid-col-12 grid-col-md-6 u-p-0 u-mb-1 u-md-mb-0">
+            <img class="grid-col-12" src="assets/images/project-img-3.jpg" alt="">
           </div>
-          <div class="col-md-1"></div>
+          <div class="grid-col-md-1"></div>
           <!-- PROJECT TEXT -->
-          <div class="col-12 col-md-5 fw-300 fs-md-3 p-0">
-            <p class="m-0 fw-500">TASTY FOOD WEBSITE</p>
+          <div class="grid-col-12 grid-col-md-5 u-fw-300 u-p-0">
+            <p class="u-m-0 u-fw-500">TASTY FOOD WEBSITE</p>
             <p>07-21-2021</p>
-            <p class="fw-400 text-justify">A food website made with HTML, CSS, Javascript, and ScrollReveal for the fade in animation.
+            <p class="u-fw-400 u-my-1 u-md-mt-2 u-text-justify">A food website made with HTML, CSS, Javascript, and ScrollReveal for the fade in animation.
             </p>
-            <a href="https://sherondavesanol.github.io/tasty-food-website" target="blank" class="project-view">view project</a>
+            <a href="https://sherondavesanol.github.io/tasty-food-website" target="blank" class="project__view">view project</a>
           </div>
         </div>
-        <hr class="col-12 col-md-12 p-0 my-4">
-
-        <!-- ITEM 4 -->
-        <!-- PROJECT PREVIEW -->
-        <div class="row flex-md-row-reverse m-0 p-0">
-          <div class="col-12 col-md-6 p-0 mb-4 mb-md-0">
-            <img class="col-12" src="assets/images/project-img-5.jpg" alt="">
-          </div>
-          <div class="col-md-1"></div>
-          <!-- PROJECT TEXT -->
-          <div class="col-12 col-md-5 p-0 fw-300 fs-md-3">
-            <p class="m-0 fw-500">COCA-COLA LANDING PAGE</p>
-            <p>06-27-2021</p>
-            <p class="fw-400 text-justify">A Coca-Cola tribute webpage made using HTML, CSS, Javascript, and Scroll for the carousel component.
-            </p>
-            <a href="https://sherondavesanol.github.io/cokeTributeWebsite/" target="blank" class="project-view">view project</a>
-          </div>
-        </div>
-        <hr class="col-12 col-md-12 p-0 my-4">
-
-      </div>
+        <hr class="grid-col-12 grid-col-md-12 u-p-0 u-my-3">
     </div>
   </section>
+      
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="row d-flex mx-3 mx-md-5 p-0">
-      <div class="col-12 col-md-4 p-0">
-        <h2 class="mb-4 mb-md-0">contact.</h2>
+    <div class="u-md-d-flex u-mx-1 u-md-mx-5 u-mt-3 u-p-0">
+      <div class="grid-col-12 grid-col-md-4 u-p-0">
+        <h2 class="u-mb-2 u-md-mb-0">contact.</h2>
       </div>
 
-      <div class="col-12 col-md-8 p-0">
-        <h3 class="p-0 fw-500 contact-header">got a project you wanna work on? send me a message!</h3>
+      <div class="grid-col-12 grid-col-md-8 u-p-0">
+        <h3 class="u-p-0 u-mb-2 u-fw-500 u-fs-5">got a project you wanna work on? send me a message!</h3>
         <form 
-        id="my-form"
-         action="https://formspree.io/f/mdoybarl" 
-         method="POST"
+          id="my-form"
+          action="https://formspree.io/f/mdoybarl" 
+          method="POST"
         >
           <!-- NAME -->
-          <label class="col-12 fw-300 mt-3" for="name">name</label>
-          <input class="col-12 fw-300 p-2" type="text" name="name" required>
+          <label class="grid-col-12 u-fw-300" for="name">name</label>
+          <input class="grid-col-12 u-fw-300 u-my-1 u-p-2 form__input u-fs-6" type="text" name="name" required>
           <!-- EMAIL -->
-          <label class="col-12 fw-300 mt-3" for="email">email</label>
-          <input class="col-12 fw-300 p-2" type="email" name="email" required>
+          <label class="grid-col-12 u-fw-300" for="email">email</label>
+          <input class="grid-col-12 u-fw-300 u-my-1 u-p-2 form__input u-fs-6" type="email" name="email" required>
           <!-- CONTACT NUMBER -->
-          <label class="col-12 fw-300 mt-3" for="number">contact number</label>
-          <input class="col-12 fw-300 p-2" type="number" name="number" required>
+          <label class="grid-col-12 u-fw-300 u-mt-2" for="number">contact number</label>
+          <input class="grid-col-12 u-fw-300 u-my-1 u-p-2 form__input u-fs-6" type="number" name="number" required>
           <!-- EMAIL -->
-          <label class="col-12 fw-300 mt-3" for="message" name="message">message</label>
-          <textarea name="message" class="col-12 fw-300 p-2"></textarea>
-          <button type="submit" class="cta-1 col-4 col-md-2 px-0 py-1 d-block mt-3 fw-400"id="my-form-button">send</button>
-          <p id="my-form-status" class="mt-4"></p>
+          <label class="grid-col-12 u-fw-300 u-mt-2" for="message" name="message">message</label>
+          <textarea name="message" class="grid-col-12 fw-300 u-my-1 u-p-2 form__input u-fs-6"></textarea>
+          <button type="submit" class="cta__1 grid-col-4 grid-col-md-2 u-px-0 u-py-half u-d-block u-mt-1 u-fw-400"id="my-form-button">send</button>
+          <p id="my-form-status" class="u-my-3"></p>
         </form>
       </div>
     </div>
   </section>
 
-  <hr class="footer-hr mx-3 mx-md-5 mb-5">
-
   <!-- FOOTER -->
+  <hr class="footer-hr u-mx-1 u-md-mx-5 u-mb-5">
+
   <footer>
-    <div class="mx-3 mx-md-5 p-0">
-    <div class="row m-0 p-0 mb-3">
-      <div class="col-12 col-md-2 p-0 mb-5 mb-md-0 description">
-        <p class="m-0 p-0 fw-500">PORTFOLIO WEBSITE</p>
-        <p class="m-0 p-0 fw-500">FRONT-END DEVELOPER</p>
-        <p class="m-0 p-0 fw-500">UI/UX DESIGNER</p>
+    <div class="u-mx-1 u-md-mx-5 u-p-0">
+    <div class="footer u-md-d-flex u-m-0 u-p-0 u-mb-1">
+      <div class="grid-col-12 grid-col-md-2 u-p-0 u-mb-3 u-md-mb-0 footer__description">
+        <p class="u-m-0 u-p-0 u-fw-500 footer__description__text">PORTFOLIO WEBSITE</p>
+        <p class="u-m-0 u-p-0 u-fw-500 footer__description__text">FRONT-END DEVELOPER</p>
+        <p class="u-m-0 u-p-0 u-fw-500 footer__description__text">UI/UX DESIGNER</p>
       </div>
-      <div class="col-12 col-md-2 p-0"></div>
-      <div class="col-12 col-md-2 p-0 mb-5 mb-md-0">
-        <a class="d-block fs-5 fw-300 be" target="blank" href="https://www.behance.net/sherondavesanol">Behance</a>
-        <a class="d-block fs-5 fw-300 li" target="blank" href="https://www.linkedin.com/in/sheron-dave-sa%C3%B1ol-63a85220b/">LinkedIn</a>
-        <a class="d-block fs-5 fw-300 yt" target="blank" href="https://www.youtube.com/channel/UCqzlyGWBku7C9Pxklp5P5nQ">Youtube</a>
+      <div class="grid-col-12 grid-col-md-2 u-p-0"></div>
+      <div class="footer__social-links grid-col-12 grid-col-md-2 u-p-0 u-mb-3 mb-md-0">
+        <a class="footer__social-links--behance u-d-block u-fs-4 u-mb-half u-fw-300 be" target="blank" href="https://www.behance.net/sherondavesanol">Behance</a>
+        <a class="footer__social-links--linkedin u-d-block u-fs-4 u-mb-half u-fw-300 li" target="blank" href="https://www.linkedin.com/in/sheron-dave-sa%C3%B1ol-63a85220b/">LinkedIn</a>
+        <a class="footer__social-links--youtube u-d-block u-fs-4 u-fw-300 yt" target="blank" href="https://www.youtube.com/channel/UCqzlyGWBku7C9Pxklp5P5nQ">Youtube</a>
       </div>
-      <div class="col-12 col-md-2"></div>
-      <div class="col-12 col-md-4 p-0 contact-info">
-      <p class="m-0 p-0 fw-300 mb-2">Sheron Dave Sanico Sañol</p>
-      <p class="m-0 p-0 fw-300">Lapaz, Iloilo City</p>
-      <p class="m-0 p-0 fw-300 mb-2">5000 Iloilo PH</p>
-      <p class="m-0 p-0 fw-300 mb-2">+639 177 701 559</p>
-      <p class="m-0 p-0 fw-500">sdssanol@gmail.com</p>
+      <div class="grid-col-12 grid-col-md-2"></div>
+      <div class="grid-col-12 grid-col-md-4 u-p-0">
+      <p class="u-m-0 u-p-0 u-fw-300 u-mb-1">Sheron Dave Sanico Sañol</p>
+      <p class="u-m-0 u-p-0 u-fw-300">Lapaz, Iloilo City</p>
+      <p class="u-m-0 u-p-0 u-fw-300 u-mb-1">5000 Iloilo PH</p>
+      <p class="u-m-0 u-p-0 u-fw-300 u-mb-1">+639 177 701 559</p>
+      <p class="u-m-0 u-p-0 u-fw-500">sdssanol@gmail.com</p>
       </div>
     </div>
-    <div class="d-md-flex gap-1 my-4 copyright">
-      <p class="m-0 p-0 fw-300">Made by Sheron Dave Sañol</p>
-      <p class="m-0 p-0 fw-300">&copy;2021 All Rights Reserved</p>
+    <div class="d-md-flex u-my-2 copyright">
+      <p class="u-m-0 u-p-0 u-fw-300">Made by Sheron Dave Sañol</p>
+      <p class="u-m-0 u-p-0 u-fw-300">&copy;2021 All Rights Reserved</p>
     </div>
 
   </div>
   </footer>
 
-  <!-- <div class="social-media">
-      <a href="#" class="fw-300 p-0">ig.</a>
-      <a href="#" class="fw-300 p-0">yt.</a>
-      <a href="#" class="fw-300 p-0">be.</a>
-  </div> -->
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-  <script>
-    var form = document.getElementById("my-form");
-    
-    async function handleSubmit(event) {
-      event.preventDefault();
-      var status = document.getElementById("my-form-status");
-      var data = new FormData(event.target);
-      fetch(event.target.action, {
-        method: form.method,
-        body: data,
-        headers: {
-            'Accept': 'application/json'
-        }
-      }).then(response => {
-        status.innerHTML = "Thanks for reaching out! I'll get back to you soon.";
-        form.reset()
-        
-        setTimeout(() => {status.innerHTML = ''}, 3000)
-      }).catch(error => {
-        status.innerHTML = "Oops! There was a problem submitting your form."
-      });
-    }
-    form.addEventListener("submit", handleSubmit)
-  </script>
+  <script src='./js/index.js'></script>
 </body>
 </html>

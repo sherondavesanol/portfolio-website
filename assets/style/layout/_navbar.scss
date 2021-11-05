@@ -1,0 +1,54 @@
+.navbar {
+    align-items: center;
+    background: rgba(0, 0, 0, .75);
+    height: 4rem;
+    position: fixed;
+    width: 100%;
+
+    &__links {
+        display: none;
+    }
+}
+
+.mobile__menu {
+    backdrop-filter: blur(.5rem);
+        -webkit-backdrop-filter: blur(.5rem);
+    background: rgba(0, 0, 0, .85);
+    height: 100%;
+    left: -100rem;
+    position: absolute;
+    top: 4rem;
+    transition: ease-in-out 300ms;
+
+    &--link {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+
+        &--home {
+            border-top: 1px solid rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    &.active {
+        top: 4rem;
+        left: 0;
+    }
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .navbar {
+
+        &__links {
+            display: initial;
+        }
+
+        &__mobile-menu--logo {
+            display: none;
+        }
+    }
+
+    .mobile__menu {
+        display: none !important;
+    }
+}

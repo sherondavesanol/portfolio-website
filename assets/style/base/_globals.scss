@@ -1,0 +1,58 @@
+* {
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.5rem;
+}
+
+a,
+a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    * {
+        line-height: 1.75rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1152px) {
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    p {
+        font-size: 1.25rem;
+    }
+}
+
+@media only screen and (min-width: 1680px) {
+
+    body {
+        margin: 0 10rem;
+    }
+    
+    section {
+        padding: 7.5rem 0;
+    }
+
+    h2 {
+        font-size: 3.5rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+    }
+}
