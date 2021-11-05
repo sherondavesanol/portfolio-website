@@ -1,0 +1,301 @@
+html, * {
+    font-family: 'Rubik', sans-serif;
+    user-select: none;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    min-height: 90vh;
+    position: relative;
+}
+
+nav {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+header {
+    min-height: 100vh;
+}
+
+img {
+    width: auto;
+}
+
+section {
+    padding: 6rem 0;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+a, a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.cta-1 {
+    color: black;
+    background-color: #fff;
+    border-radius: 1rem;
+    border-style: none;
+}
+
+.cta-1:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.cta-2 {
+    color: #fff;
+    background-color: transparent;
+    border-radius: 1rem;
+    border: solid 1px #fff;
+}
+
+.cta-2:hover {
+    cursor: pointer;
+}
+
+.project-view:hover {
+    text-decoration: underline;
+}
+
+.contact-header {
+    font-size: 1.25rem;
+}
+
+input, textarea {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+
+textarea {
+    height: 200px;
+    resize: none;
+}
+
+textarea:focus, input:focus {
+    outline-width: 0;
+}
+
+.be, .be:hover {
+    color: #6F8EFF;
+}
+
+.li, .li:hover {
+    color: #FFBB55;
+}
+
+.yt, .yt:hover {
+    color: #FF4040;
+}
+
+.copyright {
+    font-size: 0.75rem;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-hr {
+    opacity: 75%;
+}
+
+.contact-info {
+    font-size: 0.85rem;
+}
+
+/* FONT-WEIGHT */
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500, strong {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.fw-900 {
+    font-weight: 900;
+}
+
+/* CUSTOM MEDIA QUERY */
+@media only screen and (min-width: 415px) {
+    h1 {
+        font-size: 2.5rem !important;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        margin: 0 3rem;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    a {
+        font-size: 0.65rem !important;
+    }
+
+    header {
+        min-height: 20vh;
+    }
+
+    .hero-banner {
+        padding-top: 3rem;
+        flex-direction: row-reverse;
+        align-items: center;
+    }
+
+    .banner-subtext {
+        font-size: 1rem !important;
+    }
+
+    .banner-subtext::before {
+        content: 'I HATE MISALIGNED PIXELS AS MUCH AS YOU DO';
+        display: block;
+        margin-bottom: 1rem;
+        font-weight: 600;
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+    }
+
+    .description {
+        font-size: 0.725rem;;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .navbar-nav {
+        display: flex;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    h2 {
+        font-size: 2.5rem !important;
+    }
+
+    .hero-banner {
+        padding-top: 0;
+    }
+
+    .banner-subtext {
+        font-size: 1.75rem !important;
+    }
+
+    .banner-subtext::before {
+        font-size: 3rem;
+        line-height: 3.5rem;
+    }
+
+}
+
+@media only screen and (min-width: 1152px) {
+
+    h2 {
+        font-size: 2.5rem !important;
+    }
+    
+    header {
+        min-height: 100vh;
+    }
+
+    p {
+        font-size: 1.25rem !important;
+    }
+
+    .hero-banner {
+        padding-top: 3rem;
+    }
+
+    .banner-subtext {
+        font-size: 1.5rem !important;
+    }
+
+    .banner-subtext::before {
+        font-size: 3.75rem;
+        line-height: 4rem;
+    }
+
+}
+
+@media only screen and (min-width: 1366px) {
+    
+    .hero-banner {
+        padding-top: 0rem;
+    }
+
+}
+
+@media only screen and (min-width: 1680px) {
+
+    body {
+        margin: 0 10rem;
+    }
+    
+    section {
+        padding: 7.5rem 0;
+    }
+
+    h2 {
+        font-size: 3.5rem !important;
+    }
+
+    a {
+        font-size: 1rem !important;
+    }
+
+    p {
+        font-size: 1.5rem !important;
+    }
+
+    footer p {
+        font-size: 1rem !important;
+    }
+
+    .banner-subtext {
+        font-size: 2rem !important;
+    }
+
+    .banner-subtext::before {
+        font-size: 5rem;
+        line-height: 5.5rem;
+    }
+
+}
